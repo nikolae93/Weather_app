@@ -1,0 +1,152 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+
+Elements
+
+*/
+
+h4 {
+    font-size: 22px;
+}
+
+.nav {
+    color: white;
+    background:linear-gradient(to bottom, rgb(0, 0, 0), rgb(67, 67, 67));
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.a1{
+   margin-left: 70px;
+   font-size: 19px;
+   text-transform: uppercase;
+  
+   padding: 3px;
+   transition: color 0.5s ease-in;
+}
+
+.a2{
+   margin-right: 20px;
+   transition: color 0.5s ease-in;
+}
+
+.a1:hover,
+.a2:hover {
+    color: lightblue;
+}
+
+.main {
+    width: 100%;
+    height: 90vh;
+    background-image: url("../img/main.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    
+   
+}
+
+.search{
+    width: 500px;
+    height: 350px;
+    background-color: rgb(228, 228, 228);
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    border-radius: 5%;
+    box-shadow: inset 0px 0px 20px 20px rgb(219, 219, 219);
+    font-family: 'Josefin Slab', serif;
+}
+
+.content {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.header {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Josefin Slab', serif;
+    margin-bottom: 30px;
+}
+
+.txt-exp{
+    font-size: 16px;
+    margin-bottom: 70px;
+}
+
+.footer {
+    width:100%;
+    height: 5vh;
+    color: white;
+    background:linear-gradient(to top, rgb(0, 0, 0), rgb(67, 67, 67));
+}
+
+footer{
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+}
+
+footer a:hover {
+   
+    color: white;
+}
+
+
+
+
+.input-txt {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    outline: none;
+   border: 0.5px solid lightblue;
+}
+
+.input-txt::placeholder {
+    text-align: center;
+}
+
+.submit-btn{
+    display: block;
+    width: 130px;
+    height: 40px;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    cursor: pointer;
+    border: none;
+    border-radius: 10%;
+    margin-left: 55px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.submit-btn:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    font-size: 15px;
+}
+

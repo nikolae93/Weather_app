@@ -9,14 +9,14 @@ const hbs = require("hbs");
 var port = 3000 || process.env.PORT ;
 
 
-
+app.use(express.static(path.join(__dirname, 'src')));
 app.use(express.static(__dirname));
 
 
 //ROUTES
 
 app.get("/",(req,res)=>{
-    res.sendFile(path.join(__dirname+"/blank.html"));
+    res.sendFile(path.join(__dirname,"/src/index.html"));
 });
 
 
@@ -24,5 +24,4 @@ app.get("/",(req,res)=>{
 //PORT
 app.listen(port,()=>{
   console.log("radi");
-  console.log(__dirname);
 });
