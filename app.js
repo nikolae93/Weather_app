@@ -21,6 +21,12 @@ app.get("/",(req,res)=>{
 
 
 
+app.get("*",(req,res)=>{
+  res.sendFile(path.join(__dirname,"/src/404.html"));
+});
+
+
+
 //PORT
 app.listen(port,()=>{
   console.log("radi");
