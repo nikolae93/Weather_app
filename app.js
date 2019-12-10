@@ -19,12 +19,13 @@ app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname,"/src/index.html"));
 });
 
-
+app.get("/about",(req,res)=>{
+  res.sendFile(path.join(__dirname,"/src/About.html"));
+});
 
 app.get("*",(req,res)=>{
   res.sendFile(path.join(__dirname,"/src/404.html"));
 });
-
 
 
 //PORT
