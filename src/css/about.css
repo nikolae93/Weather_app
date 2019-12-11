@@ -77,12 +77,134 @@ body::-webkit-scrollbar-thumb
 }
 
 .container{
-    background-color: red;
+    background-color: white;
     height: 90%;
     width: 90%;
     align-self: center;
     margin: 0 auto;
+    display: flex;
     
+}
+
+.info_app{
+
+    
+     height: 100%;
+     width: 60%;
+
+
+}
+
+.info_me {
+
+    background-color: white;
+    height: 100%;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+
+}
+
+
+.inf_basic{
+     height:  25%;
+     margin-bottom: 5%;
+     width: 100%;
+     background-color: white;
+     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 1.5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.inf_story{
+    height:  70%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 1.5%;
+}
+
+.pers_info_basic{
+ 
+  height: 95%;
+  width: 75%;
+  padding: 2.5% 0;
+}
+
+.hedd{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Josefin Slab', serif;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+
+.tyt{
+    margin-left: 20px;
+    font-family: 'Josefin Slab', serif;
+}
+
+.tyt a {
+    text-decoration: none;
+    color: #555;
+}
+
+.tyt a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.photo{
+   
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+
+}
+
+.infa{
+    background-color: white;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 95%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 1.5%;
+      
+}
+
+.headapp{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.infa a {
+    text-decoration: none;
+    color: #555;
+}
+
+.infa a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+
 }
 
 /*Footer */
