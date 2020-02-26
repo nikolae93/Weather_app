@@ -123,7 +123,15 @@ body::-webkit-scrollbar-thumb
     width: 100%;
     background-color: white;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    padding: 1.5%;
+    padding: 5%;
+}
+
+.story_head{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Josefin Slab', serif;
+    margin-bottom: 20px;
 }
 
 .pers_info_basic{
