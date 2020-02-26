@@ -38,6 +38,8 @@ app.get("/weather",(req,res)=>{
            
             location:req.query.address
          });
+
+      //  res.redirect("http://localhost:3000/weatherform");
        });
    
    });
@@ -52,7 +54,9 @@ app.get("/weather",(req,res)=>{
 
 });
 
-
+app.get("/weatherform",(req,res)=>{
+   res.sendFile(path.join(__dirname,"/src/weather.html"));
+})
 
 app.get("/about",(req,res)=>{
   res.sendFile(path.join(__dirname,"/src/About.html"));
