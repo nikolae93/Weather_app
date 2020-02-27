@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
     <link href="./css/weather.css" rel="stylesheet">
 </head>
 <body>
@@ -14,8 +15,40 @@
                 <a href="/about" class="a2">About app</a>
               </nav>
 
-    <h1>Hello</h1>
 
+    <div class="main">
+
+        <div class="content">
+
+          <div class="info">
+
+            <div class="infobox">
+             <h3>Weather</h3>
+             <p id="location">Loading location</p>
+             <p id="timezone">Loading timezone</p>
+             <p id="latitude">Loading latitude</p>
+             <p id="longitude">Loading longitude</p>
+             <p id="temperature">Loading temperature</p>
+             <p id="summary">Loading summary</p>
+             <p id="rain">Loading rain probability</p>
+            </div>
+
+          </div>
+
+          <div class="image">
+           <img src="./img/cloudy.png">
+          </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <footer class="footer">
+        Copyright &copy; 2019 <a href="#">Nikola Ekmedžić</a> 
+    </footer>
 
     <script src="./weather.js"></script>
 </body>
