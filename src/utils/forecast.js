@@ -10,7 +10,8 @@ request({url:url, json:true},(error,res)=>{
        callback(undefined,{
           summary:res.body.currently.summary,
           temp: res.body.currently.temperature,
-          rainProb: res.body.currently.precipProbability
+          rainProb: res.body.currently.precipProbability,
+          data:res.body
        });
    }
 });

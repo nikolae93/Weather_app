@@ -36,7 +36,9 @@ app.get("/weather",(req,res)=>{
          res.send({
             forecast:forecastData,
            
-            location:req.query.address
+            location:req.query.address,
+            data: req.data
+            
          });
 
       //  res.redirect("http://localhost:3000/weatherform");
