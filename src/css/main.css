@@ -181,11 +181,20 @@ body::-webkit-scrollbar-thumb
           width: 300px;
       }
 
-      
+      .a1 {
+        margin-left: 25px;
+        font-size: 15px;
+    }
 
       .txt-exp {
          font-size: 12px;
          margin-bottom: 20px;
+      }
+
+      .header{
+        font-size: 22px;
+        letter-spacing: 0.5px;
+        margin-bottom: 12px;
       }
 
       .footer {
