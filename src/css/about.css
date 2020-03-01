@@ -237,3 +237,105 @@ footer a:hover {
    
     color: white;
 }
+
+/* @media only screen and(max-width:800px){
+
+    .main{
+     font-size: 12px !important;
+    }
+
+    .infa{
+        font-size: 10px;
+    }
+
+    .txtapp{
+        font-size: 10px;
+    }
+
+} */
+
+@media only screen and (max-width:800px){
+
+    .main{
+        height: 100%;
+    }
+
+    .a1 {
+        margin-left: 30px;
+        font-size: 15px;
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+
+    .info_app{
+        width: 100%;
+        display: block;
+    }
+
+    .info_me{
+        width: 100%;
+
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        font-size: 11px;
+    }
+
+    .inf_basic{
+        height:  25%;
+        margin-bottom: 10px;;
+        width: 96.5%;
+       padding: 1%;
+     
+   }
+
+   .photo{
+    height: 80%;
+    width: 20%;
+   }
+
+   .hedd{
+    font-size: 15px;
+    
+    letter-spacing: 0;
+    
+    margin-bottom: 0;
+    margin-left: 20px;
+
+}
+
+.headapp{
+    font-size: 18px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+}
+
+.inf_story{
+    height:  150px;
+    width: 100%;
+    background-color: white;
+    
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.story_head{
+    font-size: 15px;
+   
+    letter-spacing: 0px;
+   
+    margin-bottom: 7px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.infa{
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+}
