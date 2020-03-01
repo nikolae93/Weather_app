@@ -46,7 +46,7 @@ rain.innerHTML = `Rain probability: ${params.r}`;
 
 // JS change icon according to icon param
 
-let icon = params.icon;
+var icon = params.icon;
 let iconDOM = document.getElementById("wimg");
 
 console.log(icon);
@@ -101,6 +101,43 @@ function styleInputs(str){
     return f1;
 }
 
-let testString = "abg3467*%$%#  dfhASD";
+// let testString = "abg3467*%$%#  dfhASD";
 
-console.log(styleInputs(testString) );
+// console.log(styleInputs(testString) );
+
+
+
+function testWidth(){
+
+   let w = window.outerWidth;
+   //console.log(w);
+   var main11 = document.getElementById("main1");
+  
+   if(w<=800){
+     
+      console.log("manje od 800");
+      console.log(icon);
+
+    if(icon === "clear-day"){
+      main11.style.backgroundImage="url(./img/clear-day.jpg)";
+   }else if(icon === "clear-night"){
+    main11.style.backgroundImage="url(./img/clear-night.jpg)";
+   }else if(icon === "rain"){
+    main11.style.backgroundImage="url(./img/rain.png)";
+   }else if(icon === "snow"){
+    main11.style.backgroundImage="url(./img/snow.png)";
+   }else if(icon === "sleet"){
+    main11.style.backgroundImage="url(./img/sleet.png)";
+   }else if(icon === "fog"){
+    main11.style.backgroundImage="url(./img/fog.png)";
+   }else if(icon === "cloudy"){
+    main11.style.backgroundImage="url(./img/cloudy.png)";
+   }else{
+    main11.style.backgroundImage="url(./img/partly-cloudy.png)";
+   }
+
+   }
+
+}
+
+testWidth();
