@@ -1,4 +1,7 @@
 console.log("Greetings from front-end");
+//console.log(window.location.origin);
+
+var url = window.location.origin;
 
 /* Button and input */
 const button = document.getElementById("sbtbtn1");
@@ -16,7 +19,7 @@ button.addEventListener("click",
 
    let location= search.value;
 
-  fetch(`http://localhost:3000/weather?address=${location}`).then((response)=>{
+  fetch(`${url}/weather?address=${location}`).then((response)=>{
 
      response.json().then((d)=>{
 
@@ -47,7 +50,7 @@ button.addEventListener("click",
    //     window.location.replace(
    // `http://localhost:3000/weatherform?summary=${data.forecast.summary}&temp=${data.forecast.temp}&rain=${data.forecast.rainProb}&location=${data.location}`);
 
-      window.location.replace(`http://localhost:3000/weatherform?location=${loc}&timezone=${tz}&lat=${lat}&lon=${lon}&sum=${s}&icon=${ic}&t=${t}&r=${r}`);
+      window.location.replace(`${url}/weatherform?location=${loc}&timezone=${tz}&lat=${lat}&lon=${lon}&sum=${s}&icon=${ic}&t=${t}&r=${r}`);
 
         }
 
