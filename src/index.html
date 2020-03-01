@@ -31,7 +31,9 @@
                    For example Belgrade, London, New York, etc.</p>
 
                 <h4>Please enter your location:</h4>
-                <input type="text" placeholder="Location ..." class="input-txt" id="inpmain1">
+                <input type="text" placeholder="Location ..." onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Location ...'"
+                class="input-txt" id="inpmain1">
                 <input type="submit" class="submit-btn" id="sbtbtn1">
          </div>
 

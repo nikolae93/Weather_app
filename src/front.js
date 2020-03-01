@@ -12,58 +12,18 @@ const search = document.getElementById("inpmain1");
 // end test
 
 
-button.addEventListener("click", 
-
-(e)=>{
-   e.preventDefault(); 
-
-   let location= search.value;
-
-  fetch(`${url}/weather?address=${location}`).then((response)=>{
-
-     response.json().then((d)=>{
-
-        if(d.error){
-          console.log(d.error);
-        }else {
-
-          console.log(d);
-
-            let loc= d.location;
-            let tz = d.forecast.data.timezone;
-            let lat = d.forecast.data.latitude;
-            let lon = d.forecast.data.longitude;
-            let s=d.forecast.summary;
-            let ic= d.forecast.data.currently.icon;
-            let t= d.forecast.temp;
-            let r = d.forecast.rainProb;
-            
-          //  let arr =[loc,tz,lat,lon,s,ic,t,r];
-          //  console.log(arr);
-
-       // console.log(data.location);
-         // console.log(`Summary: ${data.forecast.summary} ,Temperature:${data.forecast.temp}
-         //   Probability of rain: ${data.forecast.rainProb}
-         // `);
-        // console.log(data.forecast);
-       // setTimeout(()=>{window.location.replace(`http://localhost:3000/weatherform`);},3000)
-   //     window.location.replace(
-   // `http://localhost:3000/weatherform?summary=${data.forecast.summary}&temp=${data.forecast.temp}&rain=${data.forecast.rainProb}&location=${data.location}`);
-
-      window.location.replace(`${url}/weatherform?location=${loc}&timezone=${tz}&lat=${lat}&lon=${lon}&sum=${s}&icon=${ic}&t=${t}&r=${r}`);
-
-        }
-
-     });
-
-  });
-
-
-  // window.location.replace(`http://localhost:3000/weatherform`);
-
+button.addEventListener("click", (e)=>{
+   getData(e);
 }
 
 );
+
+document.addEventListener("keydown",(e)=>{
+    if(e.keyCode===13){
+      getData(e);
+      
+    }
+});
 
 /*
 
@@ -96,3 +56,53 @@ button.addEventListener("click",
 }
 
 */
+
+getData = (e)=>{
+  e.preventDefault(); 
+
+  let location= search.value;
+
+ fetch(`${url}/weather?address=${location}`).then((response)=>{
+
+    response.json().then((d)=>{
+
+       if(d.error){
+         console.log(d.error);
+        
+       }else {
+
+         console.log(d);
+
+           let loc= d.location;
+           let tz = d.forecast.data.timezone;
+           let lat = d.forecast.data.latitude;
+           let lon = d.forecast.data.longitude;
+           let s=d.forecast.summary;
+           let ic= d.forecast.data.currently.icon;
+           let t= d.forecast.temp;
+           let r = d.forecast.rainProb;
+           
+         //  let arr =[loc,tz,lat,lon,s,ic,t,r];
+         //  console.log(arr);
+
+      // console.log(data.location);
+        // console.log(`Summary: ${data.forecast.summary} ,Temperature:${data.forecast.temp}
+        //   Probability of rain: ${data.forecast.rainProb}
+        // `);
+       // console.log(data.forecast);
+      // setTimeout(()=>{window.location.replace(`http://localhost:3000/weatherform`);},3000)
+  //     window.location.replace(
+  // `http://localhost:3000/weatherform?summary=${data.forecast.summary}&temp=${data.forecast.temp}&rain=${data.forecast.rainProb}&location=${data.location}`);
+
+     window.location.replace(`${url}/weatherform?location=${loc}&timezone=${tz}&lat=${lat}&lon=${lon}&sum=${s}&icon=${ic}&t=${t}&r=${r}`);
+
+       }
+
+    });
+
+ });
+
+
+ // window.location.replace(`http://localhost:3000/weatherform`);
+
+}
